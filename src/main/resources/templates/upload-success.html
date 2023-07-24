@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Upload Successful</title>
+    <style>
+        /* Your existing CSS styles */
+    </style>
+</head>
+
+<body>
+<div id="navbar">
+    <ul>
+        <li><a th:href="@{/user-profile/{id}(id=${userId})}">User Profile</a></li>
+        <li><a th:href="@{/uploadRecipe}">Upload Recipe</a></li>
+    </ul>
+</div>
+<div class="container">
+    <h1>Recipe Upload Successful!</h1>
+    <p>Your recipe has been successfully uploaded to the database.</p>
+    <p>Thank you for sharing your recipe!</p>
+</div>
+</body>
+
+</html>
